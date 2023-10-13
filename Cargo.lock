@@ -1082,6 +1082,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "debugid"
+version = "0.8.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bef552e6f588e446098f6ba40d89ac146c8c7b64aade83c051ee00bb5d2bc18d"
+dependencies = [
+ "serde",
+ "uuid",
+]
+
+[[package]]
 name = "derivative"
 version = "2.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3475,6 +3485,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "sourcemap"
+version = "7.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "dbecc42a2b6131acc3bf9a25c9fe4161dba438eb52131bba83c5d781b5b70be3"
+dependencies = [
+ "data-encoding",
+ "debugid",
+ "if_chain",
+ "rustc_version 0.2.3",
+ "serde",
+ "serde_json",
+ "unicode-id",
+ "url",
+]
+
+[[package]]
 name = "spin"
 version = "0.9.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3689,7 +3715,7 @@ dependencies = [
  "rustc-hash",
  "serde",
  "serde_json",
- "sourcemap",
+ "sourcemap 7.0.0",
  "swc_atoms",
  "swc_cached",
  "swc_common",
@@ -3805,7 +3831,7 @@ dependencies = [
  "relative-path",
  "serde",
  "serde_json",
- "sourcemap",
+ "sourcemap 6.2.3",
  "swc_core",
  "tracing",
  "tracing-chrome",
@@ -3839,7 +3865,7 @@ dependencies = [
  "serde",
  "serde_json",
  "siphasher",
- "sourcemap",
+ "sourcemap 7.0.0",
  "string_cache",
  "swc_atoms",
  "swc_eq_ignore_macros",
@@ -3860,7 +3886,7 @@ dependencies = [
  "napi-derive",
  "pathdiff",
  "serde",
- "sourcemap",
+ "sourcemap 7.0.0",
  "swc_atoms",
  "swc_common",
  "swc_config",
@@ -4160,7 +4186,7 @@ dependencies = [
  "rustc-hash",
  "serde",
  "serde_json",
- "sourcemap",
+ "sourcemap 7.0.0",
  "swc_atoms",
  "swc_common",
  "swc_ecma_ast",
@@ -4575,7 +4601,7 @@ name = "swc_ecma_transforms"
 version = "0.225.5"
 dependencies = [
  "pretty_assertions",
- "sourcemap",
+ "sourcemap 6.2.3",
  "swc_atoms",
  "swc_common",
  "swc_ecma_ast",
@@ -4806,7 +4832,7 @@ dependencies = [
  "serde",
  "serde_json",
  "sha-1",
- "sourcemap",
+ "sourcemap 7.0.0",
  "swc_common",
  "swc_ecma_ast",
  "swc_ecma_codegen",
